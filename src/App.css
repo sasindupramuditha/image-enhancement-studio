@@ -1,0 +1,58 @@
+.App {
+  --ink: #17202a;
+  --muted: #64717d;
+  --line: #d9e1e5;
+  --surface: rgba(255, 255, 255, 0.86);
+  min-height: 100vh;
+  padding: 64px 24px 56px;
+  color: var(--ink);
+  background: radial-gradient(circle at 10% 0%, #e8f5f2 0, transparent 32%),
+    radial-gradient(circle at 92% 10%, #fff0df 0, transparent 29%), #f7faf9;
+}
+
+.header,
+.home,
+.footer {
+  width: min(100%, 920px);
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 38px;
+  text-align: center;
+}
+
+.eyebrow {
+  display: block;
+  margin-bottom: 14px;
+  color: #e06d4f;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+
+.header h1 {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(2.5rem, 6vw, 4.6rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 0.98;
+}
+
+.header p {
+  margin: 18px 0 0;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.footer {
+  margin-top: 34px;
+  color: var(--muted);
+  font-size: 0.88rem;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+}

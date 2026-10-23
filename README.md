@@ -1,16 +1,36 @@
-# React + Vite
+# Image Enhancement Studio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A React and Vite app for enhancing uploaded images with the PicWish API. The app uses a small Express backend to keep the API key out of the browser.
 
-Currently, two official plugins are available:
+## Requirements
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Node.js
+- A PicWish API key
 
-## React Compiler
+## Setup
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Install dependencies:
 
-## Expanding the Oxlint configuration
+```sh
+npm install
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+Copy `src/utils/.env.example` to `src/utils/.env` and add your API key:
+
+```env
+PICWISH_API_KEY=your_api_key_here
+```
+
+Start the backend in one terminal:
+
+```sh
+npm run server
+```
+
+Start the frontend in another terminal:
+
+```sh
+npm run dev
+```
+
+Open the local URL printed by Vite. The backend accepts image uploads up to 20 MB on port 3000.

@@ -1,0 +1,21 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	min-width: 320px;
+	background: #f7faf9;
+}
+
+body {
+	min-width: 320px;
+	min-height: 100vh;
+	margin: 0;
+	font-family: 'Trebuchet MS', Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+button,
+input {
+	font: inherit;
+}
